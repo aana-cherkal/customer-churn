@@ -1,24 +1,22 @@
 # customer-churn
-Customer Churn Prediction using Logistic Regression
-This project uses telecom customer data to predict churn. Trained and evaluated multiple models including Logistic Regression, Decision Tree, KNN, and SVM to identify the best-performing classifier.
+This project uses telecom customer data to predict whether a customer will churn.
+--trained and compared multiple models including Logistic Regression, Decision Tree, KNN, and SVM to find the best-performing classifier
 
 Problem Statement
-Predict whether a customer is likely to churn using:
+Predict the likelihood of customer churn using:
 
-Contract type, payment method, tenure
+Contract type, tenure, payment method
 
-Presence of security services
+Security and internet services
 
-Internet service and monthly charges
+Monthly charges and total charges
 
-Customer demographics and account info
+Customer demographics
 
 Techniques Used
-Data Cleaning (Handled nulls, dropped irrelevant columns)
+Data Cleaning (Handled nulls, removed unnecessary columns)
 
-Label Encoding & One-Hot Encoding
-
-Feature Scaling
+Feature Scaling + One-Hot Encoding
 
 Logistic Regression, Decision Tree, KNN, SVM
 
@@ -30,14 +28,11 @@ Accuracy, Precision, Recall, F1-score
 Confusion Matrix
 
 Key Takeaways
-Logistic Regression showed the most balanced precision and recall
+Logistic Regression had the most balanced performance
 
 Decision Tree slightly overfit the training data
 
-KNN and SVM underperformed due to high dimensionality
-
-Key churn factors: contract type, missing security services, payment method
+KNN and SVM struggled due to high dimensionality
 
 Dataset
-Telecom customer dataset with demographics, account details, and service usage patterns.
-
+Telecom customer dataset with 20+ features covering service usage, billing, and customer info.
